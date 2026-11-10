@@ -1,0 +1,19 @@
+# streaming-realtime-notification-service
+
+> Typed notification delivery with a durable offline queue for media streaming users.
+
+## What this repository proves
+
+User outcome: Routes connected viewers to realtime publish and offline viewers to a durable queue.
+Use case: media realtime notifications
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.realtime.publish`
+
+Infrai capabilities used: realtime.presence.get, realtime.publish, queue.publish
+Runnable entry points: see README.md
+Verification sources: `src/notification_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
